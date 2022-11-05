@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+
+.titulo{
+    margin: 15px;
+    color: rgb(253, 40, 2);
+    position: relative;
+    left: 45%; top: 10px ;
+    animation: latir 1.5s linear infinite;
+
+}
+h2{
+    margin: 15px;
+    left: 47%;
+    color: aliceblue;
+    position: absolute;
+    animation: salto 1.5s;
+    animation-iteration-count:infinite ;
+}
+@keyframes salto{
+    0%{
+        transform:  translate(1px,-1px) ;
+    }
+    25%{
+        transform:  translate(1px,-10px) ;
+    }
+    50%{
+        transform:  translate(1px,-12px) ;
+    }
+    75%{
+        transform:  translate(1px,-10px) ;
+    }
+    100%{
+        transform:  translate(1px,-1px) ;
+    }
+
+}
+
+@keyframes latir{
+    0%{
+        transform:  scale(1) ;
+    }
+    25%{
+        transform:  scale(1.05) ;
+    }
+    50%{
+        transform:   scale(1.1) ;
+    }
+    75%{
+        transform:  scale(1.05) ;
+    }
+    100%{
+        transform:scale(1) ;
+    }
+    
+}
